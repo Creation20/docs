@@ -1,0 +1,143 @@
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+  
+  body {
+    height: 100vh;
+    font-family: 'Poppins';
+    font-size: 1.1em;
+    background-image: url('resources/greenPastures.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .border{
+    border: 1px solid blue;
+  }
+  
+  .container {
+  display: flex;
+  flex-direction: column;
+  
+  }
+  header {
+    display: flex;
+    /* gap: 35px; */
+    align-items: center;
+    justify-content:space-around;
+  }
+  
+  li {
+    list-style: none;
+    display: inline;
+    font-size: 1.3rem;
+    padding: 5px;
+  }
+  .list-features {
+    font-size: 30px;
+    display: inline;
+    color: white;
+  }
+  li:hover {
+    background-color: #4b8b3b;
+    transition: 1s;
+  }
+  
+  .left{
+    flex: 3;
+    display: flex;
+    gap: 10px;
+    width:300px;
+    padding: 20px;
+    margin-top: 120px;
+    margin-left: 50px;
+  }
+  .right{
+    flex: 2;
+    width:300px;
+    padding: 20px;
+  }
+  .all{
+    margin: 20px;
+    display: flex;
+  }
+  
+  /* .box{
+    flex: 2;
+  } */
+  .description{
+    flex: 1;
+    border-left: 4px solid rgb(144, 228, 144);
+    padding: 30px;
+    margin-left: 10px;
+    height: 250px;
+    width: 250px;
+  }
+  
+  .mainSection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .btn{
+     text-align: center;
+     color:white;
+     font-size: 35px;
+     background-color: #4b8b3b;
+     width: 300px;
+     border-radius: 0px 25px 0px 25px;
+  }
+  
+  .desc{
+    border-radius: 10px;
+    margin-top: -15px;
+    padding: 5px; 
+    background-color: white;
+    font-size: 1rem;
+  }
+  
+  .pbtn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  /* media query to bring the mainSection to a column rather than row */
+  
+  @media(max-width:500px){
+    .mainSection {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+    }
+  }
+  
+  @media(max-width:550px){
+    header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    
+  }
+  /* has to do with the inner box  */
+  @media(max-width:900px){
+    .all{
+      margin: 20px;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  
+  
